@@ -89,7 +89,7 @@ public class Calculator extends AppCompatActivity {
             public void onClick(View v) {
                 angkaPertama.setText("");
                 angkaKedua.setText("");
-                hasil.setText("0");
+                hasil.setText("");
                 angkaPertama.requestFocus();
             }
         });

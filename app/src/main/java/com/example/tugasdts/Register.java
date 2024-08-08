@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class Register extends AppCompatActivity {
@@ -14,6 +15,7 @@ public class Register extends AppCompatActivity {
     EditText etRegEmail, etRegPassword;
     Button btnRegRegister;
     DatabaseHelper db;
+    TextView lgn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,6 +25,7 @@ public class Register extends AppCompatActivity {
         etRegEmail = findViewById(R.id.etRegEmail);
         etRegPassword = findViewById(R.id.etRegPassword);
         btnRegRegister = findViewById(R.id.btnRegRegister);
+        lgn = findViewById(R.id.regista2);
         db = new DatabaseHelper(this);
 
         btnRegRegister.setOnClickListener(new View.OnClickListener() {
@@ -43,6 +46,13 @@ public class Register extends AppCompatActivity {
                 } else {
                     Toast.makeText(getApplicationContext(), "Email Already Exists", Toast.LENGTH_SHORT).show();
                 }
+            }
+        });
+        lgn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Register.this, LoginRegister.class);
+                startActivity(intent);
             }
         });
     }

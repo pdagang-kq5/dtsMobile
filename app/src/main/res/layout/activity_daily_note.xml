@@ -9,11 +9,15 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Search notes"
+        android:textStyle="bold"
         android:padding="16dp"
         android:layout_marginBottom="8dp"
         tools:ignore="VisualLintTextFieldSize"
         android:inputType="text"
-        android:autofillHints="" />
+        android:autofillHints=""
+        android:background="@drawable/bg_textfield"
+        android:layout_marginTop="11dp"
+        />
     <ListView
         android:id="@+id/listView"
         android:layout_width="match_parent"
@@ -24,13 +28,19 @@
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="16dp"
         android:padding="16dp" />
+
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/fab"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
         android:layout_alignParentEnd="true"
-        android:layout_margin="16dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:contentDescription="TODO"
         android:src="@drawable/baseline_add_circle_24"
-        android:contentDescription="TODO" />
+
+        />
 </RelativeLayout>
