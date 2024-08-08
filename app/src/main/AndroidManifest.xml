@@ -13,6 +13,12 @@
         android:theme="@style/Theme.TugasDTS"
         tools:targetApi="31">
         <activity
+            android:name=".DailyNote"
+            android:exported="false" />
+        <activity
+            android:name=".AddEditNote"
+            android:exported="false" />
+        <activity
             android:name=".Calculator"
             android:exported="false" />
         <activity
@@ -21,7 +27,7 @@
         <activity
             android:name=".Home"
             android:exported="true"
-            android:theme="@style/Theme.MaterialComponents.DayNight" />/>
+            android:theme="@style/Theme.MaterialComponents.DayNight" />
         <activity
             android:name=".LoginRegister"
             android:exported="false" />
